@@ -16,9 +16,10 @@
 package report
 
 import (
-	"github.com/future-architect/gbilling2slack/invoice"
 	"sort"
 	"strings"
+
+	"github.com/future-architect/gbilling2slack/invoice"
 )
 
 type ServiceCost struct {
@@ -32,8 +33,8 @@ type ServiceCost struct {
 // < 06/01 - 06/22 > YOUR-PROJECT-ID
 // service name              |    month cost ( day cost )
 // ------------------------------------------------------
-// Cloud Scheduler           |          1 円 (     0 → )
-// Compute Engine            |     15,042 円 (   347 ↑ )
+// Cloud Scheduler           |          1 USD (     0 → )
+// Compute Engine            |     15,042 USD (   347 ↑ )
 type DetailReport struct {
 	ProjectID        string
 	ServiceCostList  []ServiceCost
