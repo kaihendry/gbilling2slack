@@ -16,10 +16,11 @@
 package invoice
 
 import (
-	"cloud.google.com/go/bigquery"
 	"context"
-	"google.golang.org/api/iterator"
 	"time"
+
+	"cloud.google.com/go/bigquery"
+	"google.golang.org/api/iterator"
 )
 
 type invoice struct {
@@ -43,7 +44,7 @@ func (i *invoice) FetchBillingDay(ctx context.Context) (CostList, error) {
 		FROM	
 			` + "`" + i.tableName + "`" + `
 		WHERE
-			DATE(_PARTITIONTIME) = ` + time.Now().Format("'2006-01-02'") + `
+			partitiontime = ` + time.Now().Format("'2006-01-02'") + `
 		AND
 			project.id IS NOT NULL
 		GROUP BY
