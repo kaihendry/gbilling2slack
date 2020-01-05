@@ -3,13 +3,24 @@ module github.com/future-architect/gbilling2slack
 go 1.12
 
 require (
-	cloud.google.com/go v0.43.0
+	cloud.google.com/go v0.50.0 // indirect
+	cloud.google.com/go/bigquery v1.3.0
+	cloud.google.com/go/pubsub v1.1.0
 	github.com/dustin/go-humanize v1.0.0
-	github.com/gorilla/websocket v1.4.0 // indirect
-	github.com/lusis/go-slackbot v0.0.0-20180109053408-401027ccfef5 // indirect
-	github.com/lusis/slack-test v0.0.0-20190426140909-c40012f20018 // indirect
-	github.com/nlopes/slack v0.5.0
+	github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7 // indirect
+	github.com/google/go-cmp v0.3.1 // indirect
+	github.com/gorilla/websocket v1.4.1 // indirect
+	github.com/jstemmer/go-junit-report v0.9.1 // indirect
+	github.com/nlopes/slack v0.6.0
 	github.com/pkg/errors v0.8.1 // indirect
-	github.com/stretchr/testify v1.3.0 // indirect
-	google.golang.org/api v0.7.0
+	go.opencensus.io v0.22.2 // indirect
+	golang.org/x/exp v0.0.0-20191227195350-da58074b4299 // indirect
+	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
+	golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6 // indirect
+	golang.org/x/sys v0.0.0-20200103143344-a1369afcdac7 // indirect
+	golang.org/x/tools v0.0.0-20200103221440-774c71fcf114 // indirect
+	google.golang.org/api v0.15.0
+	google.golang.org/appengine v1.6.5 // indirect
+	google.golang.org/genproto v0.0.0-20191230161307-f3c370f40bfb // indirect
+	google.golang.org/grpc v1.26.0 // indirect
 )
